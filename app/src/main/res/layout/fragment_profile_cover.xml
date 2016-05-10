@@ -1,0 +1,76 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        tools:context=".ProfileActivityFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/firstpage">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgHeadImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/head_image"
+            app:border_width="2dp"
+            app:border_color="#FFFFFF"/>
+
+    <TextView
+
+            android:id="@+id/tvPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgHeadImage"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:gravity="start"
+            android:shadowColor="@android:color/darker_gray"
+            android:singleLine="true"
+
+            android:text="Kate Johansson"
+            android:textSize="35sp"/>
+
+    <TextView
+            android:id="@+id/tvPersonJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPersonName"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="left"
+            android:textColor="@android:color/white"
+            android:shadowColor="@android:color/darker_gray"
+
+            android:text="Graphic designer at GPlanet Tec."
+            android:textSize="18dp"/>
+
+    <TextView
+            android:id="@+id/tvPersonality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPersonJob"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:shadowColor="@android:color/darker_gray"
+
+            android:text="She is active and funny"
+            android:textSize="16dp"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/butConnect"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tvPersonality"
+                android:layout_marginTop="10dp"
+                android:text="Connect"/>
+
+</RelativeLayout>

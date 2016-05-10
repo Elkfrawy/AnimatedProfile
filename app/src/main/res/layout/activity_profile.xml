@@ -1,0 +1,54 @@
+<FrameLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:background="@drawable/profile_background"
+
+android:name="com.elkfrawy.animatedprofile.ui.ProfileActivityFragment"
+
+android:id="@+id/profile_background"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+
+<FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#91000000"
+        android:id="@+id/overlayLayout"
+/>
+
+
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+    >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar_title"
+                android:textSize="21sp"
+                android:textColor="@android:color/black"
+                android:text="Kate Johansson"
+                android:visibility="invisible"
+        />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <com.elkfrawy.animatedprofile.ui.VerticalViewPager
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pager"/>
+
+
+</RelativeLayout>
+</FrameLayout>
